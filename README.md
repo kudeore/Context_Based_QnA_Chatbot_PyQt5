@@ -13,7 +13,7 @@
 
 
 ## Visuals
-Link:https://airfarepred.herokuapp.com/
+
 
 
 [<img target="_blank" src="https://i.imgur.com/Rx9nN7t.png" width=500 height=400>]
