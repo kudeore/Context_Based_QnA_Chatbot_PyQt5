@@ -1,11 +1,13 @@
 # Context_Based_QnA_Chatbot_PyQt5
-Question answering Chatbot craeted by using PyQt5 tools, for questions related to particular context 
+- Question answering Chatbot craeted by using PyQt5 tools, for questions related to particular context 
+- Transformaers archetecture used to ceate this bot 
+- leaveraged the use of NLP pipeline from Hugging Face
 
 
 ## Content
   * [Visuals](#Visuals)
   * [Context](#Context)
-  * [Cloud Deployment Heroku ](#Cloud_Deployment_Heroku)
+  * [PyQt5 Framework Design](#PyQt5_Framework_Design)
   * [Directory Tree](#directory-tree)
   * [Am I missing Something?](#Am-I-missing-Something?)
 
@@ -14,7 +16,7 @@ Question answering Chatbot craeted by using PyQt5 tools, for questions related t
 Link:https://airfarepred.herokuapp.com/
 
 
-[<img target="_blank" src="https://i.imgur.com/Rx9nN7t.png" width=600 height=500>]
+[<img target="_blank" src="https://i.imgur.com/Rx9nN7t.png" width=500 height=400>]
 
 
 ## Context
@@ -31,55 +33,42 @@ Link:https://airfarepred.herokuapp.com/
 pip install -r requirements.txt
 ```
 - One needs PyQt5 to be installed to run QnA framework
-- this can be installed through .exe file attahced with repo. 
+- this can be installed through .exe file cant be attached because of big size . (please do contact if ypu need this file)  
 
-## Deployement on Heroku
-- Signup on heroku.com 
-- To deploy on heroku we need heroku ctl to be downloaded 
+## PyQt5 Framework Design
+- Basic Framework is Designed using t Designer 
+- Themes and Styles are added using Setsyle 
 
-[![](https://i.imgur.com/dKmlpqX.png)](https://heroku.com)
+[![]<img target="_blank" src="https://i.imgur.com/H0TXELG.png " width=400 height=300>](https://doc.qt.io/qt-5/qtdesigner-manual.html)
 
-- Next step is to create heroku app with name as per availability 
-- We need to push the code on heroku using Git commit 
-- detail steps are given in the documentation (for documentation visit Heroku website) 
-- [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python)
 
-Importatnt Things to make note of while deploying model to Heroku free cloud . 
-- Heroku provides max 500MB sludge memory 
-- If we have big model , its not possible to deploy it on Heroku Cloud. 
 
 
 ## Directory Tree 
 ```
-├── static 
-│   ├── css
-│      ├── style.css
-├── images 
-│   ├── flight.jpeg
-├── templates
-│   ├── home.html
-├── Preprocessing.py
-├── feature_selection.py
-├── app.py
-├── Procfile
+├── context.py
+├── TransformerQandA.py
+├── Askme_Qt_app.py
 ├── README.md
 ├── model.pkl
 ├── requirements.txt
 ```
 
 - model.pkl is not copied to repo , as size is to huge 
-- Please run Preprocessing.py in your local machine first to get model.pkl 
+- Please run TransformerQandA.py in your local machine first to get model.pkl 
+
 
 ## Technologies Used
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
 
-[<img target="_blank" src="https://i.imgur.com/Vgxcuk1.png" width=170>]
-[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
+[<img target="_blank" src="https://i.imgur.com/J37eDG4.png" width=170>](https://pypi.org/project/PyQt5/)
+[<img target="_blank" src="https://i.imgur.com/zWRUuCJ.jpg" width=170>](https://shecancode.io/huggingface-company-page)
+[<img target="_blank" src="https://i.imgur.com/3TWKJ0S.png" width=170>](https://pytorch.org/) 
 
 
 ## Am I missing Something?
 
 - **Nothing is impossible!**
-- please open an [issue](https://github.com/kudeore/Flight_price_pred_AWS_APP/issues) and lets make it better together 
+- please open an [issue](https://github.com/kudeore/Context_Based_QnA_Chatbot_PyQt5/issues) and lets make it better together 
 - *Bug reports, feature requests, patches, and well-wishes are always welcome.* :heavy_exclamation_mark:
